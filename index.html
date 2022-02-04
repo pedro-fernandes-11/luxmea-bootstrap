@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+        }
+    
+        .container-carousel{
+            margin-bottom: 100px;
+        }
+    </style>
+    <title>Lux Mea</title>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm row bg-secondary">
+            <ul class="navbar-nav col-6">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="list.html">List</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav col-6 justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-primary btn-md" onclick="location.href='register.html'">Registre-se</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container text-center p-3 text-light">
+        <h4 class="display-4">Filósofos</h4>
+    </div>
+    <div class="container mt-4 container-carousel">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+                <li data-target="#demo" data-slide-to="5"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/aristoteles.jfif" alt="Aristoteles">
+                    <div class="carousel-caption">
+                        <h3>Aristoteles</h3>
+                        <p>"O sábio nunca diz tudo o que pensa, mas pensa sempre tudo o que diz."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/descartes.jpg" alt="Descartes">
+                    <div class="carousel-caption">
+                        <h3>Descartes</h3>
+                        <p>"Daria tudo que sei pela metade do que ignoro."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/epicuro.jpg" alt="Epicuro" >
+                    <div class="carousel-caption">
+                        <h3>Epicuro</h3>
+                        <p>"A morte não é nada para nós, pois, quando existimos, não existe a morte, e quando existe a morte, não existimos mais."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/nietzsche.jpg" alt="Nietzsche" >
+                    <div class="carousel-caption">
+                        <h3>Nietzsche</h3>
+                        <p>"Aquilo que se faz por amor está sempre além do bem e do mal."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/platao.jpg" alt="Platao" >
+                    <div class="carousel-caption">
+                        <h3>Platão</h3>
+                        <p>"Não espere por uma crise para descobrir o que é importante em sua vida."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/socrates.jfif" alt="Sócrates" >
+                    <div class="carousel-caption">
+                        <h3>Sócrates</h3>
+                        <p>"Para conseguir a amizade de uma pessoa digna é preciso desenvolvermos em nós mesmos as qualidades que naquela admiramos."</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <div class="footer container-fluid fixed-bottom bg-secondary p-3">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <button class="btn btn-primary btn-md" onclick="location.href='register.html'">Registre-se</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
